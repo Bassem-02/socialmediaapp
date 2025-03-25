@@ -1,0 +1,19 @@
+/* Restrict the overall sidebar width for a compact look */
+.sidebar {
+    max-width: 220px; /* Adjust this value as needed */
+    padding: 1rem;
+  }
+  
+  /* Adjust icon spacing */
+  .icon-size {
+    margin-right: 0.5rem;
+  }
+  
+  /* Ensure text remains short and concise with truncation if needed */
+  .menu-text {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

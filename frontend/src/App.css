@@ -1,0 +1,89 @@
+/* Resetting default styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Add padding and background to the container */
+.container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Styling the card */
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+/* Adjust the button styling */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Add spacing to the form groups */
+.form-group label {
+  font-weight: bold;
+}
+
+.text-danger {
+  font-size: 0.9rem;
+}
+
+
+/*=========== Login ===============*/
+
+@media (max-width: 768px) {
+  .login-cover,
+  .login-content {
+    width: 100%;
+    height: auto;
+  }
+  .login-cover {
+    display: none; /* Optionally hide the cover on small screens */
+  }
+}
+
+/*=========== Home ===============*/
+
+
+.layout-app{
+  display: flex;
+
+}
+
+
+
+
+/*  Profile   */
+
+/* Profile Picture */
+.img-fluid.rounded-circle {
+  border: 5px solid #ddd; /* Border around profile picture */
+}
+
+/* Bio Section */
+.bio {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Personal Info */
+ul li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
