@@ -48,22 +48,26 @@ const LikeButton = () => {
 };
 
 const Post = () => {
+  // Liste d'images de pets
+  const petImages = [
+    "https://images.pexels.com/photos/257540/pexels-photo-257540.jpeg",
+    "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg",
+    "https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg",
+    "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg"
+  ];
+
+  // Sélectionner une image aléatoire
+  const randomPetImage = petImages[Math.floor(Math.random() * petImages.length)];
+
   return (
     <div className="card my-3 w-100">
       {/* Header Section */}
       <div className="card-header d-flex align-items-center">
-        <div
-          style={{
-            width: "45px",
-            height: "45px",
-            overflow: "hidden",
-            borderRadius: "50%",
-          }}
-        >
+        <div className="rounded-circle overflow-hidden" style={{ width: "45px", height: "45px" }}>
           <img
             src="https://images.pexels.com/photos/31209915/pexels-photo-31209915/free-photo-of-un-pere-attentionne-tenant-son-nouveau-ne-dans-ses-bras.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Profile"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            className="img-fluid"
           />
         </div>
         <div className="ms-2">
@@ -75,6 +79,13 @@ const Post = () => {
       {/* Body Section */}
       <div className="card-body">
         <p className="card-text fs-5">Hello, this is my first post...</p>
+        <div className="text-center">
+          <img 
+            src={randomPetImage} 
+            alt="Pet" 
+            className="img-fluid rounded mx-auto d-block w-50"
+          />
+        </div>
       </div>
 
       {/* Footer Section */}

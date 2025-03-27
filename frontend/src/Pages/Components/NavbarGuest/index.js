@@ -12,7 +12,7 @@ const NavbarGuest = () => {
         <div className="navbar_profile_search d-flex align-items-center me-3">
           <FontAwesomeIcon icon={faMagnifyingGlass} className="text-secondary me-2" />
           <input type="text" className="form-control" placeholder="Search ..." />
-        </div>iuiuiuiui
+        </div>
 
         <a href="/register" className="btn btn-primary">
           <FontAwesomeIcon icon={faUserPlus} className="me-2" />

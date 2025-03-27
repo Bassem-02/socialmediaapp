@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import UsernameCard from "./Components/UsernameCard";
-import Sidebar from "./Components/Sidebar";
-import Requests from "./Components/Requests";
 import Posts from "./Components/Posts";
+import Sponsored from "./Components/Sponsored";
+import SuggestionList from "./Components/SuggestionList";
+import Requests from "./Components/Requests";
 
 const Home = () => {
     const [connectedUser, setConnectedUser] = useState({});
@@ -33,7 +34,7 @@ const Home = () => {
                 {/*  Left Box */ }
                 <div style={{ width: "25%"}} >
                 <UsernameCard  user={connectedUser}  />
-                <Sidebar />
+                
                 </div>
                 {/*  Middle  Box */ }
                 <div  style={{ width: "50%"}}  >
@@ -43,7 +44,9 @@ const Home = () => {
                 </div>
                 {/* Right Box  */ }
                 <div style={{ width: "25%"}} >
-                    <Requests />
+                    <Sponsored/>
+                    <Requests/>
+                    <SuggestionList/>
                 </div>
             </div>
             

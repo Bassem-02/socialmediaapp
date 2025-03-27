@@ -2,6 +2,12 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const PostRacine = () => {
+  const petImages = [
+    "https://images.pexels.com/photos/257540/pexels-photo-257540.jpeg",
+    "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg",
+    "https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg",
+    "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg"
+  ];
   return (
     <div className="card my-3 w-100">
       {/* Header Section */}
@@ -14,10 +20,10 @@ const PostRacine = () => {
             borderRadius: "50%",
           }}
         >
-          <img
+         <img
             src="https://images.pexels.com/photos/31209915/pexels-photo-31209915/free-photo-of-un-pere-attentionne-tenant-son-nouveau-ne-dans-ses-bras.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Profile"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            className="img-fluid"
           />
         </div>
         <div className="ms-2">
@@ -29,6 +35,16 @@ const PostRacine = () => {
       {/* Body Section */}
       <div className="card-body">
         <p className="card-text fs-5">Hello, this is my first post...</p>
+
+        {/* Image from the internet */}
+        <div className="post-image">
+          <img
+            src="https://images.pexels.com/photos/1054372/pexels-photo-1054372.jpeg" // Example of a pet photo from Pexels
+            alt="Pet"
+            className="img-fluid rounded"
+            style={{ width: "100%", height: "auto", objectFit: "cover" }}
+          />
+        </div>
       </div>
 
       {/* Footer Section */}

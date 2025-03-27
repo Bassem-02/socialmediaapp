@@ -6,6 +6,7 @@ import Home from '../Pages/Home';
 import PageNotFound from '../Pages/PageNotFound';
 import PageRacine from '../Pages/PageRacine';
 import Profile from '../Pages/Profile';
+import ChatPage from '../Pages/ChatPage';
 
 
 
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
       path: '/profile',
       element: <Profile/>
     },
+    {
+      path: '/chat',
+      element: <ChatPage/>
+    },
+
 
 ])
 

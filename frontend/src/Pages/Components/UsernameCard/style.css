@@ -1,0 +1,22 @@
+.dark-theme {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .dark-theme .navbar,
+  .dark-theme .bg-light {
+    background-color: #1e1e1e !important;
+    color: white !important;
+  }
+  
+  .dark-theme .form-control {
+    background-color: #333 !important;
+    color: white !important;
+    border-color: #555 !important;
+  }
+  
+  .dark-theme .btn-light {
+    background-color: #444 !important;
+    color: white !important;
+  }
+  

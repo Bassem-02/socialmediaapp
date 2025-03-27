@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShare } from "@fortawesome/free-solid-svg-icons";
+import { faShare, faImage, faVideo } from "@fortawesome/free-solid-svg-icons";
 
 const NewPost = () => {
   return (
@@ -38,15 +38,19 @@ const NewPost = () => {
         ></textarea>
       </div>
 
-      {/* Post Button */}
-      <div className="card-footer d-flex justify-content-end">
+      {/* Post Buttons */}
+      <div className="card-footer d-flex justify-content-between">
+        <div>
+          <button className="btn btn-outline-primary me-2">
+            <FontAwesomeIcon icon={faImage} /> Post Photo
+          </button>
+          <button className="btn btn-outline-secondary">
+            <FontAwesomeIcon icon={faVideo} /> Post Video
+          </button>
+        </div>
         <button
           className="btn btn-primary"
-          style={{
-            marginTop: "10px",
-            padding: "10px 20px",
-            borderRadius: "8px",
-          }}
+          style={{ padding: "10px 20px", borderRadius: "8px" }}
         >
           <FontAwesomeIcon icon={faShare} /> Post it!
         </button>
